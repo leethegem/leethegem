@@ -1,51 +1,782 @@
-In a text editor, create a new file, and save it with a .html extension.
-Copy your web content from the word processing software into your HTML file.
-Open your HTML file in a web browser. How does it look, compared to what you expected?
-
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
-    <title>Who is the LIYAH</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <script src="boutme.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="final.css">
+    <script src="final.js"></script>
 
-    </script
+
+    <title>UnderRated Artists</title>
+
   </head>
-  <body bgcolor="sky blue">
-    <h1 align="center"> Who is the L-I-Y-A-H?</h1>
-      <center><img src="me.jpg"</img></center>
 
-    <center><p> I am Aaliyah not the singer, but a girl who codes. I'm from Inglewood,Ca born and raised. On my free time I binge watch movies/shows on Netflix and on Hulu, also I write poetry. I am open minded person, I love talking about conspiracies and other things that people don't normally talk about. Lastly, I love music specially R&B because its real and soulful.</p></center>
-    <hr>
-    <center><b>Interest</b></center>
-    <center><p> Sports, Adventures, Video games, Poetry, Shopping</p>
-      <table bgco>
-          <tr>
-              <td><img src="sports.jpg"></td>
-              <td><img src="for21.jpg"></td>
-          </tr>
-          <tr>
-              <td><img src="poetry.jpg"></td>
-              <td><img src="videogame.jpg"></td>
+  <body style="background-image:url('pplnotes.gif');">
+    <p>Play music while you search!</p>
+<audio controls>
+  <source src="dreaming.wav" type="audio/wav"></audio>
+<audio controls>
+  <source src="Cute ass beat.wav" type="audio/wav"></audio>
 
-          </tr>
-      </table>
-      </center>
-      <center><h2>Words that describe me:</h2>
-      <p>Unique</p>
-      <p>Chill</p>
-      <p>Quiet</p>
-      <p>Charismatic</p>
-      <p>Tomboy</p>
-      <p>Nerd</p>
-      </center>
 
-<img src="flag.gif">
 
-    <div class="">
-      <a href="https://www.instagram.com/uglylitkid">instagram</a>
+<!--Tab links-->
+    <div id="Home" class="tabcontent">
 
-      </div>
-    <body>
+      <center><h1>UnderRated Artists</h1></center>
+      <center><img src="unknownppl.jpg"</img></center>
+      <center><p id="main">Welcome to Underrated Artists, our mission is to put out artists that aren't very popular or never been heard of and show them the recognition they deserve.</p></center>
+
+    </div>
+
+
+
+    <div class="topnav">
+
+      <input id="search"type="text" placeholder="Search..">
+      <button onclick="search()">Search</button>
+
+    </div>
+    <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'Pop')">Pop</button>
+  <button class="tablinks" onclick="openCity(event, 'R&B')">R&B</button>
+  <button class="tablinks" onclick="openCity(event, 'Hip-Hop/Rap')">Hip-Hop/Rap</button>
+  <button class="tablinks" onclick="openCity(event, 'About')">About</button>
+</div>
+
+<div id="About" class="tabcontent">
+ <p id="pg">Underrated Artists is about introducing new artists and new music to people. Providing the value of them and their music that they need. Nowadays people are into mumble rap and off beat nonsense which is whack and not real music at all.<br><br>
+  Music is not the same anymore, there is not as much depth nor storytelling. Music labels  are producing weak artists and making them popular which is why people are missing out on the real talented artists like Sylvan LaCue, Rayana Jay, SiR, Vince Staples, etc. Underrated Artists is a place where you can find what's missing in the music industry, and receive that depth and storytelling.<br><br>
+  I want people to listen to these artists who don't receive the recognition for their music,their depth, their realness and themselves. I would like to recommend people to take a break from the popular music that doesn't make sense and give these artists a chance to hear them out.
+</p>
+
+<div class="container">
+ <img src="lacue2.jpg" style="width:100%;">
+  <div class="bottom-left">Sylvan LaCue</div>
+</div>
+  <div class="container">
+  <img src="rayjay.jpg" style="width:100%;">
+  <div class="bottom-left">Rayana Jay</div>
+</div>
+  <div class="container">
+  <img src="SIR.jpg" style="width:100%;">
+  <div class="bottom-left">SiR</div>
+</div>
+  <div class="container">
+  <img src="vince.jpg" style="width:100%;">
+  <div class="bottom-left">Vince Staples</div>
+</div>
+</div>
+
+
+<div id="Pop" class="tabcontent">
+  <h3>Pop</h3>
+  <table style="width:100%">
+  <tr>
+    <td><a href="https://www.youtube.com/user/officialcharlixcx">Charli XCX</a></td>
+    <td><a href="https://www.youtube.com/channel/UCxqkOxQYocXRtSqlotgXh7w">FKJ</a></td>
+    <td><a href="https://www.youtube.com/channel/UCOCgB3xd-B-1qAm-hR9OLrA">Halsey</a></td>
+    <td><a href="https://www.youtube.com/user/AvrilLavigne">Avril Lavigne</a></td>
+    <td><a href="https://www.youtube.com/user/elliegoulding">Elle Goulding</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://www.youtube.com/channel/UCfkwsnF2tdgpBhc0bvVH9Kg">DaniLeigh</a></td>
+    <td><a href="https://www.youtube.com/user/ElleKingMusic">Elle King</a></td>
+    <td><a href="https://www.youtube.com/user/PinkVideoVault">P!INK</a></td>
+    <td><a href="https://www.youtube.com/user/TheCherLloydChannel">Cher Lloyd</a></td>
+    <td><a href="https://www.youtube.com/user/CharliesVlogs">Charlie Puth</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://www.youtube.com/user/JessicaCornish">Jessie J</a></td>
+    <td><a href="https://www.youtube.com/user/adelelondon">Adele</a></td>
+    <td><a href="https://www.youtube.com/user/6peasinapod">Pia Mia</a></td>
+    <td><a href="https://www.youtube.com/user/FlumeAUS">Flume</a></td>
+    <td><a href="https://www.youtube.com/user/therealdemilovato">Demi Lovato</a></td>
+
+
+  </tr>
+  <tr>
+    <td><a href="https://www.youtube.com/user/DuaLipa1">Dua Lipa</a></td>
+    <td><a href="https://www.youtube.com/user/neyomusiccompound">Ne-Yo</a></td>
+    <td><a href="https://www.youtube.com/user/JonasBrothersMusic">Jonas Brothers</a></td>
+    <td><a href="https://www.youtube.com/user/heyitszendaya">Zendaya</a></td>
+    <td><a href="https://www.youtube.com/user/TheHayleyKiyokoVEVO">Hayley Kiyoko</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://www.youtube.com/channel/UCbNNpH4gB4Nu-imqMDysWiw">Elley Duhe</a></td>
+    <td><a href="https://www.youtube.com/user/Maroon5">Maroon5</a></td>
+    <td><a href="https://www.youtube.com/channel/UCM4LYYpqEJL_HK4RgdqZzPA">JSPH</a></td>
+    <td><a href="https://www.youtube.com/user/twentyonepilots">TwentyOnePilots</a></td>
+    <td><a href="https://www.youtube.com/user/twigstv">FKA twigs</a></td>
+
+
+  </tr>
+  <tr>
+    <td><a href="https://www.youtube.com/channel/UCEIuq4GhEX8ECXgOg5uHVsA">Blessed</a></td>
+    <td><a href="https://www.youtube.com/channel/UCWfytcGFwPSMwvP5HYuXGqw">Hailee Steinfeld</a></td>
+    <td><a href="https://www.youtube.com/user/ritaora">Rita Ora</a></td>
+    <td><a href="https://www.youtube.com/user/KatyPerryMusic">Katy Perry</a></td>
+    <td><a href="https://www.youtube.com/channel/UCjX7O_82W0FPcjPwCtQG3sg">Bantu</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://www.youtube.com/user/shamir326">Shamir</a></td>
+    <td><a href="https://www.youtube.com/user/CarlyRaeMusic">Carly Rae Jepsen</a></td>
+    <td><a href="https://www.youtube.com/channel/UCiGm_E4ZwYSHV3bcW1pnSeQ">Billie Eilish</a></td>
+    <td><a href="https://www.youtube.com/channel/UCeJ71AAITvQ55pPH52V6ssA">JOY.</a></td>
+    <td><a href="https://www.youtube.com/user/qzMendShawqz">Shawn Mendes</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://www.youtube.com/user/BEBEREXHA">Bebe Rexha</a></td>
+    <td><a href="https://www.youtube.com/user/kidrauhl">Justin Bieber</a></td>
+    <td><a href="https://www.youtube.com/user/ElektraRecords">Bruno Mars</a></td>
+    <td><a href="https://www.youtube.com/user/LordeMusic">Lorde</a></td>
+    <td><a href="https://www.youtube.com/channel/UCEViJyoaG9TzBbjA4xI0r4Q">Am!r</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://www.youtube.com/user/alinabaraz1"> Alina Baraz</a></td>
+    <td><a href="https://www.youtube.com/channel/UC_S_Dho26-L_V5B-gKirM-g">070 Shake</a></td>
+    <td><a href="https://www.youtube.com/channel/UCIjYyZxkFucP_W-tmXg_9Ow">Calvin Harris</a></td>
+    <td><a href="https://www.youtube.com/user/taylorswift">Taylor Swift</a></td>
+    <td><a href="https://www.youtube.com/user/ladygagaofficial">Lady Gaga</a></td>
+  </tr>
+
+  <tr>
+    <td><a href="https://www.youtube.com/channel/UCh1bAdm-p_kpf_-a2vpCyHw">Ke$ha</a></td>
+    <td><a href="https://www.youtube.com/channel/UCq3Ci-h945sbEYXpVlw7rJg">Chainsmokers</a></td>
+    <td><a href="https://www.youtube.com/channel/UCn7dB9UMTBDjKtEKBy_XISw">Miley Cyrus</a></td>
+    <td><a href="https://www.youtube.com/channel/UCpPZggubTs5NvcMCHfRCVKw">Echosmith</a></td>
+    <td><a href="https://www.youtube.com/channel/UCQyj4ysCfnmndNrjZxy0cjA">Kiiara</a></td>
+
+
+  </tr>
+
+  <tr>
+    <td><a href="https://www.youtube.com/channel/UCSZBmDk4v3ozB3kfB2oyUEA">Alessia Cara</a></td>
+    <td><a href="https://www.youtube.com/channel/UCDv75EpGUZjimTxJq25xClg">BANKS</a></td>
+    <td><a href="https://www.youtube.com/user/Lizz0plusLarvaInk">Lizzo</a></td>
+    <td><a href="https://www.youtube.com/channel/UCNwwzAlMbHAJUNoJe0h3nBw">Jeremy Zucker</a></td>
+    <td><a href="https://www.youtube.com/channel/UCL_VqyRUCOaWqY6MD3jfa8w">Mabel</a></td>
+
+
+  </tr>
+
+  <tr>
+    <td><a href="https://www.youtube.com/user/BeckyGOfficial">Becky G</a></td>
+    <td><a href="https://www.youtube.com/user/EdSheeran">Ed Sheeran</a></td>
+    <td><a href="https://www.youtube.com/channel/UCvud0mK7irJ34RVdTPSwDfQ">Quinn XCII</a></td>
+  </tr>
+</table>
+
+<!-- Header -->
+<div class="header">
+  <h1><u><center><h1 id="Gallery">Gallery</h1></center></u></h1>
+  <button class="btn" onclick="one()">1</button>
+  <button class="btn" onclick="two()">2</button>
+  <button class="btn" onclick="three()">3</button>
+</div>
+
+<!-- Photo Grid -->
+<div class="row">
+  <div class="column">
+    <div class="container">
+    <img src="charli.jpg" style="width:100%">
+    <div class="bottom-right">Charli XCX</div></div>
+    <div class="container">
+    <img src="dani.jpg" style="width:100%">
+    <div class="bottom-right">DaniLeigh</div></div>
+    <div class="container">
+    <img src="kesha.jpg" style="width:100%">
+    <div class="bottom-right">Ke$ha</div></div>
+    <div class="container">
+    <img src="hayley.jpg" style="width:100%">
+    <div class="bottom-right">Haley Kiyko</div></div>
+    <div class="container">
+    <img src="hasley.jpg" style="width:100%">
+    <div class="bottom-right">Hasley</div></div>
+    <div class="container">
+    <img src="pink.jpg" style="width:100%">
+    <div class="bottom-right">P!NK</div></div>
+    <div class="container">
+    <img src="chain.jpg" style="width:100%">
+    <div class="bottom-right">Chainsmokers</div></div>
+    <div class="container">
+    <img src="banks.jpg" style="width:100%">
+    <div class="bottom-right">BANKS</div></div>
+  </div>
+
+  <div class="column">
+    <div class="container">
+    <img src="rita.png" style="width:100%">
+    <div class="bottom-right">Rita Ora</div></div>
+    <div class="container">
+    <img src="070.jpg" style="width:100%">
+    <div class="bottom-right">070 Shake</div></div>
+    <div class="container">
+    <img src="pia.jpg" style="width:100%">
+    <div class="bottom-right">Pia Mia</div></div>
+    <div class="container">
+    <img src="kiiara.jpg" style="width:100%">
+    <div class="bottom-right">Kiiara</div></div>
+    <div class="container">
+    <img src="elleg.jpg" style="width:100%">
+    <div class="bottom-right">Elle Goulding</div></div>
+    <div class="container">
+    <img src="be.jpg" style="width:100%">
+    <div class="bottom-right">Billie Eilish</div></div>
+    <div class="container">
+    <img src="fkj.jpg" style="width:100%">
+    <div class="bottom-right">FKJ</div></div>
+    <div class="container">
+    <img src="alessia.jpg" style="width:100%">
+    <div class="bottom-right">Alessia Cara</div></div>
+    <div class="container">
+    <img src="quinn.jpg" style="width:100%">
+    <div class="bottom-right">Quinn XCII</div></div>
+  </div>
+
+  <div class="column">
+    <div class="container">
+    <img src="shamir.jpg" style="width:100%">
+    <div class="bottom-right">Shamir</div></div>
+    <div class="container">
+    <img src="echosmith.jpg" style="width:100%">
+    <div class="bottom-right">Echosmith</div></div>
+    <div class="container">
+    <img src="bebe.jpg" style="width:100%">
+    <div class="bottom-right">Bebe Rexha</div></div>
+    <div class="container">
+    <img src="elley.jpg" style="width:100%">
+    <div class="bottom-right">Elley Duhe</div></div>
+    <div class="container">
+    <img src="neyo.jpg" style="width:100%">
+    <div class="bottom-right">Ne-yo</div></div>
+    <div class="container">
+    <img src="bruno.jpg" style="width:100%">
+    <div class="bottom-right">Bruno Mars</div></div>
+    <div class="container">
+    <img src="harris.jpg" style="width:100%">
+    <div class="bottom-right">Calvin Harris</div></div>
+    <div class="container">
+    <img src="alina.jpg" style="width:100%">
+    <div class="bottom-right">Alina Baraz</div></div>
+  </div>
+
+  <div class="column">
+    <div class="container">
+    <img src="jessiej.jpg" style="width:100%">
+    <div class="bottom-right">Jessie J</div></div>
+    <div class="container">
+    <img src="bros.jpg" style="width:100%">
+    <div class="bottom-right">Jonas Brothers</div></div>
+    <div class="container">
+    <img src="JSPH.jpg" style="width:100%">
+    <div class="bottom-right">JSPH</div></div>
+    <div class="container">
+    <img src="dua.jpg" style="width:100%">
+    <div class="bottom-right">Dua Lipa</div></div>
+    <div class="container">
+    <img src="hailee.jpg" style="width:100%">
+    <div class="bottom-right">Hailee Steinfeld</div></div>
+    <div class="container">
+    <img src="FKA.jpg" style="width:100%">
+    <div class="bottom-right">FKA Twigs</div></div>
+    <div class="container">
+    <img src="jb.jpg" style="width:100%">
+    <div class="bottom-right">Justin Bieber</div></div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+<div id="R&B" class="tabcontent">
+  <h3>R&B</h3>
+  <table style="width:100%">
+  <tr>
+    <td><a href="https://www.youtube.com/channel/UCqf-kTp9ERV5T1rPayno7LA">Frank Ocean</a></td>
+    <td><a href="https://www.youtube.com/user/mahaliamusic">Mahalia</a></td>
+    <td><a href=" https://www.youtube.com/user/ArinRaySings">Arin Ray</a></td>
+    <td><a href="https://www.youtube.com/user/IamEricB2">Eric Bellinger</a></td>
+    <td><a href="https://www.youtube.com/user/xoxxxoooxo">The Weekend</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://www.youtube.com/channel/UCAo7GQQLYTEHpkkqiW2ukiw">Lucky Daye</a></td>
+    <td><a href="https://www.youtube.com/channel/UCWx9We7TdO1ut3Rj_hj5sng">Kaiit</a></td>
+    <td><a href="https://www.youtube.com/channel/UCtdVC7nSYNOpKroA5JicNig">Brent Faiyaz</a></td>
+    <td><a href="https://www.youtube.com/user/kehlanimusic">Kehlani</a></td>
+    <td><a href="https://www.youtube.com/user/JustinTimberlake">Justin Timberlake</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://www.youtube.com/user/AdrianMarcelMusic">Adrian Marcel</a></td>
+    <td><a href="https://www.youtube.com/user/JeremihMusicTV">Jeremih</a></td>
+    <td><a href="https://www.youtube.com/user/bjtckmusic">BJ the Chicago Kid</a></td>
+    <td><a href="https://www.youtube.com/user/sabrinaclaudiomusic">Sabrina Claudio</a></td>
+    <td><a href="https://www.youtube.com/user/janellemonae">Janelle Monae</a></td>
+  </tr>
+
+  <tr>
+    <td><a href="https://www.youtube.com/channel/UCkuxBjiQsb8WFsr_c5sucHg">Mereba</a></td>
+    <td><a href="https://www.youtube.com/channel/UCdlax9iC9lN_pvvPICFMthw">The Internet</a></td>
+    <td><a href="https://www.youtube.com/user/JessieReyez">Jessie Reyez</a></td>
+    <td><a href="https://www.youtube.com/channel/UCAo7GQQLYTEHpkkqiW2ukiw">Lucky Daye</a></td>
+    <td><a href="https://www.youtube.com/user/KianaLede">Kiana Lede</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://www.youtube.com/channel/UCtdVC7nSYNOpKroA5JicNig">Brent Faiyaz</a></td>
+    <td><a href="https://www.youtube.com/channel/UCqTZS48mN3iZn-GjkxbNw-Q">Ambre</a></td>
+    <td><a href="https://www.youtube.com/user/DANNYixxi">Daniel Ceasar</a></td>
+    <td><a href="https://www.youtube.com/user/rojamestv1">Ro Jmaes</a></td>
+    <td><a href="https://www.youtube.com/user/JazmineSullivan">Jazmine Sullivan</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://www.youtube.com/user/ElhaeMusic">Elhae</a></td>
+    <td><a href="https://www.youtube.com/user/AmaalNuux">Amaal</a></td>
+    <td><a href="https://www.youtube.com/user/willowsmith">Willow</a></td>
+    <td><a href="https://www.youtube.com/user/arilennox">Ari Lennox</a></td>
+    <td><a href="https://www.youtube.com/user/KingzKid24">Masego</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://www.youtube.com/user/tiwiwilson">UMI</a></td>
+    <td><a href="https://www.youtube.com/channel/UCwvtFlJdhX_SvYuETBA1shA">Xavier Omar</a></td>
+    <td><a href="https://www.youtube.com/user/VedoTheSinger">Vedo The Singer</a></td>
+    <td><a href="https://www.youtube.com/user/samsmithworld">Sam Smith</a></td>
+    <td><a href="https://www.youtube.com/user/HELLOSTINEII">Justine Skye</a></td>
+  </tr>
+  <tr>
+  <td><a href="https://www.youtube.com/channel/UCDOZs-fcPo0ab9mqUnyN4cw">Erykah Badu</a></td>
+  <td><a href="https://www.youtube.com/channel/UCxU6nh0LHqH9H4-fxWMGsgw">Miguel</a></td>
+  <td><a href="https://www.youtube.com/channel/UCHA6dVPvxRdLQ5Uu-uX3MLw">Jorja Smith</a></td>
+  <td><a href="https://www.youtube.com/user/kar3marina">Kali Uchis</a></td>
+  <td><a href="https://www.youtube.com/channel/UCNUbNl2U6Hg8J0Zem6hzC2g">Pharrell</a></td>
+  </tr>
+
+  <tr>
+  <td><a href="https://www.youtube.com/channel/UCEa-JnNdYCIFn3HMhjGEWpQ">John Legend</a></td>
+  <td><a href="https://www.youtube.com/channel/UCnzEF-_PurXQTK2uQ-A3Oww">Pink Sweat$</a></td>
+  <td><a href="https://www.youtube.com/channel/UCJngkgLd8pvRsF0bwsZMh8w">Leven Kali</a></td>
+  <td><a href="https://www.youtube.com/channel/UCgr8eWYskFV6_TqrOQ2LMFw">Cautious Clay</a></td>
+  <td><a href="https://www.youtube.com/channel/UCmXS3l31ErdIf0mxn4em_YA">Rico Love</a></td>
+  </tr>
+
+  <tr>
+    <td><a href="https://www.youtube.com/channel/UCKvu7JgqK7-ZKUKHC33meEw">Chloe x Halle</a></td>
+  <td><a href="https://www.youtube.com/channel/UCQNqatUel5nR-_0RWizIM5g">Normani</a></td>
+  <td><a href="https://www.youtube.com/channel/UCLnq5Y-Cm5h9bZQn2vZG15w">Mura Masa</a></td>
+  <td><a href="https://www.youtube.com/user/tonestith">Tone Stith</a></td>
+  <td><a href="https://www.youtube.com/channel/UC-c6shkBF2TNi5ST2g9QguA">Rayana Jay</a></td>
+
+  </tr>
+
+  <tr>
+    <td><a href="https://www.youtube.com/channel/UCzi4I7bnIQiUSAAZm6SNIBg">SiR</a></td>
+  </tr>
+</table>
+
+
+
+<!-- Header -->
+<div class="header">
+  <h1><u><center><h1 id="Gallery">Gallery</h1></center></u></h1>
+  <button class="btn" onclick="one()">1</button>
+  <button class="btn" onclick="two()">2</button>
+  <button class="btn" onclick="three()">3</button>
+</div>
+
+<!-- Photo Grid -->
+<div class="row">
+  <div class="column">
+    <div class="container">
+    <img src="ari.jpg" style="width:100%">
+    <div class="bottom-right">Ari Lennox</div></div>
+    <div class="container">
+    <img src="daye.jpg" style="width:100%">
+    <div class="bottom-right">Lucky Daye</div></div>
+    <div class="container">
+    <img src="elhae.jpg" style="width:100%">
+    <div class="bottom-right">Elhae</div></div>
+    <div class="container">
+    <img src="normani.jpg" style="width:100%">
+    <div class="bottom-right">Normani</div></div>
+    <div class="container">
+    <img src="omar.jpg" style="width:100%">
+    <div class="bottom-right">Xavier Omar</div></div>
+    <div class="container">
+    <img src="skye.jpg" style="width:100%">
+    <div class="bottom-right">Justine Skye</div></div>
+    <div class="container">
+    <img src="tone.jpg" style="width:100%">
+    <div class="bottom-right">Tone Stith</div></div>
+    <div class="container">
+    <img src="jasmine.jpg" style="width:100%">
+    <div class="bottom-right">Jasmine Sullivan</div></div>
+    <div class="container">
+    <img src="brent.jpg" style="width:100%">
+    <div class="bottom-right">Brent Faiyaz</div></div>
+  </div>
+
+  <div class="column">
+    <div class="container">
+    <img src="arin.jpg" style="width:100%">
+    <div class="bottom-right">Arin Ray</div></div>
+    <div class="container">
+    <img src="mahalia.jpg" style="width:100%">
+    <div class="bottom-right">Mahalia</div></div>
+    <div class="container">
+    <img src="UMI.jpg" style="width:100%">
+    <div class="bottom-right">UMI</div></div>
+    <div class="container">
+    <img src="mereba.jpg" style="width:100%">
+    <div class="bottom-right">Mereba</div></div>
+    <div class="container">
+    <img src="rojames.jpg" style="width:100%">
+    <div class="bottom-right">Ro James</div></div>
+    <div class="container">
+    <img src="ambre.jpg" style="width:100%">
+    <div class="bottom-right">Ambre</div></div>
+  </div>
+  <div class="column">
+    <div class="container">
+    <img src="internet.jpg" style="width:100%">
+    <div class="bottom-right">The Internet</div></div>
+    <div class="container">
+    <img src="sabrina.jpg" style="width:100%">
+    <div class="bottom-right">Sabrina Claudio</div></div>
+    <div class="container">
+    <img src="daniel.jpg" style="width:100%">
+    <div class="bottom-right">Daniel Cesar</div></div>
+    <div class="container">
+    <img src="kehlani.jpg" style="width:100%">
+    <div class="bottom-right">Kehlani</div></div>
+    <div class="container">
+    <img src="lede.jpg" style="width:100%">
+    <div class="bottom-right">Kiana Lede</div></div>
+    <div class="container">
+    <img src="uchis.jpg" style="width:100%">
+    <div class="bottom-right">Kalis Uchis</div></div>
+    <div class="container">
+    <img src="weekend.jpg" style="width:100%">
+    <div class="bottom-right">The Weekend</div></div>
+    <div class="container">
+    <img src="vedo.jpg" style="width:100%">
+    <div class="bottom-right">VedoTheSinger</div></div>
+  </div>
+  <div class="column">
+    <div class="container">
+    <img src="jorja.jpg" style="width:100%">
+    <div class="bottom-right">Jorja Smith</div></div>
+    <div class="container">
+    <img src="kaiit.jpg" style="width:100%">
+    <div class="bottom-right">Kaiit</div></div>
+    <div class="container">
+    <img src="miguel.jpg" style="width:100%">
+    <div class="bottom-right">Miguel</div></div>
+    <div class="container">
+    <img src="masego.jpg" style="width:100%">
+    <div class="bottom-right">Masego</div></div>
+    <div class="container">
+    <img src="monae.jpg" style="width:100%">
+    <div class="bottom-right">Janelle Monae</div></div>
+    <div class="container">
+    <img src="willow.jpg" style="width:100%">
+    <div class="bottom-right">Willow</div></div>
+  </div>
+</div>
+
+
+</div>
+
+
+
+<div id="Hip-Hop/Rap" class="tabcontent">
+  <h3>Hip-Hop/Rap</h3>
+  <table style="width:100%">
+  <tr>
+    <td><a href="https://www.youtube.com/user/buddyofficialvideo">Buddy</a></td>
+    <td><a href="https://www.youtube.com/user/Thirst48">Boogie</a></td>
+    <td><a href="https://www.youtube.com/channel/UCti3qowjd19fqZegcjJHzxg">Katori Walker</a></td>
+    <td><a href="https://www.youtube.com/user/ItsLadyLeshurr">Lady Leshurr</a></td>
+    <td><a href="https://www.youtube.com/channel/UC0hr5X5wd8yaTFtDk-RTBhg">Lute</a></td>
+  </tr>
+
+  <tr>
+    <td><a href="https://www.youtube.com/channel/UCiKRoVXKO9Fzrjo4eO-XDDQ">Jay Rock</a></td>
+    <td><a href="https://www.youtube.com/channel/UC2J3dERKQy25MXE5tl5u8rA">Kodie Shane</a></td>
+    <td><a href="https://www.youtube.com/channel/UCLrYAuxT8pJjckotkBgvw1A">Goldlink</a></td>
+    <td><a href="https://www.youtube.com/user/Leikeli47">Leikeli47</a></td>
+    <td><a href="https://www.youtube.com/user/postmalone">Post Malone</a></td>
+  </tr>
+
+  <tr>
+    <td><a href="https://www.youtube.com/channel/UCJwaqVwGHi73m-WQWK3QODw">Kaytranada</a></td>
+    <td><a href="https://www.youtube.com/channel/UCT4WhY3XAlGz5fb4vUaDXNA">J.I</a></td>
+    <td><a href="https://www.youtube.com/channel/UCUrOAVjEetW6x6OWO3-Ujag/videos">Reason</a></td>
+    <td><a href="https://www.youtube.com/user/GEazyTV">G Eazy</a></td>
+    <td><a href="https://www.youtube.com/channel/UC7v_YlS5RVfKPe8sWfN406A">Tierra Whack</a></td>
+  </tr>
+
+  <tr>
+      <td><a href="https://www.youtube.com/user/walemusic">Wale</a></td>
+    <td><a href="https://www.youtube.com/user/LittleSimzOfficial">Little Simz</a></td>
+    <td><a href="https://www.youtube.com/channel/UCM5xpbML7pVSHITkYQsBGeg">Deetranada</a></td>
+    <td><a href="https://www.youtube.com/user/Breezylovejoy">Anderson Paak</a></td>
+    <td><a href="https://www.youtube.com/user/TreeJTV">Mac Miller</a></td>
+  </tr>
+
+  <tr>
+    <td><a href="https://www.youtube.com/channel/UC--zl6ugn42K16BJ_bPmAOQ">Kamaiyah</a></td>
+    <td><a href="https://www.youtube.com/user/SuperMookinFiends">Bas</a></td>
+    <td><a href="https://www.youtube.com/user/dloafmusic">Dej Loaf</a></td>
+    <td><a href="https://www.youtube.com/channel/UCiHc6oRZnXXZHZlaxbNkfQg">Coi Leray</a></td>
+    <td><a href="https://www.youtube.com/user/noNameBumble">NoName</a> </td>
+
+  </tr>
+
+  <tr>
+    <td><a href="https://www.youtube.com/user/MrHarlow98">Jack Harlow</a></td>
+    <td><a href="https://www.youtube.com/user/EarthGangHBT">EarthGang</a></td>
+    <td><a href="https://www.youtube.com/user/tokenhiphop">Token</a></td>
+    <td><a href="https://www.youtube.com/user/ThatsJeanDeaux">Jean Deaux</a></td>
+    <td><a href="https://www.youtube.com/user/jcolemusic">J Cole</a></td>
+  </tr>
+
+  <tr>
+    <td><a href="https://www.youtube.com/channel/UCUebubwSuTHfHjWJI4gCS9A">Joyner Lucas</a></td>
+    <td><a href="https://www.youtube.com/channel/UCMrca1Ll0-Uya6vLP5SECag">Smino</a></td>
+    <td><a href="https://www.youtube.com/channel/UC3WIRbOw46MsbycRc1N5x4g">J.I.D</a></td>
+    <td><a href="https://www.youtube.com/channel/UCsQBsZJltmLzlsJNG7HevBg">Tyler the Creator</a></td>
+    <td><a href="https://www.youtube.com/channel/UCGsX7mDPamr5EYedMuZvwBg">Phora</a></td>
+  </tr>
+
+  <tr>
+    <td><a href="https://www.youtube.com/user/OfficialJaden">Jaden</a></td>
+    <td><a href="https://www.youtube.com/channel/UCGtjnDLpKGWKU6xtjB0NeKA">Iggy Azalea</a></td>
+    <td><a href="https://www.youtube.com/channel/UCSpnyV4h2tmp7G_mwyjrUMg">Saba</a></td>
+    <td><a href="https://www.youtube.com/channel/UCYRLqThkOVjysBOM6fgkqmQ">6lack</a></td>
+    <td><a href="https://www.youtube.com/channel/UCZG99ay_aiiY5GpX2z0lGuA">KOTA The Friend</a></td>
+  </tr>
+
+  <tr>
+    <td><a href="https://www.youtube.com/user/TankandtheBangas">Tank & the Bangas</a></td>
+      <td><a href="https://www.youtube.com/channel/UCdADIhED9-Plw02DwWqFPZA">IAMDDB</a></td>
+    <td><a href="https://www.youtube.com/channel/UC_bW3eYgJhpXdkUQHw3VArA">Chynna Rogers</a></td>
+    <td><a href="https://www.youtube.com/channel/UCwkYvTKKpAV5532Tuu9BLGw">Amine</a></td>
+    <td><a href="https://www.youtube.com/channel/UC-gtSBvnDPCZ7PuTJ6T-68Q">RAY BLK</a></td>
+  </tr>
+
+    <tr>
+    <td><a href="https://www.youtube.com/user/DaveBReaal">Dave B</a></td>
+    <td><a href="https://www.youtube.com/channel/UC4EDjfs78AhVgpBqE3WFGJg">Logic</a></td>
+    <td><a href="https://www.youtube.com/channel/UCXYRdIXDdeZIf816EWAr5zQ">Macklemore</a></td>
+    <td><a href="https://www.youtube.com/user/TheRealAngelHaze">Angel Haze</a></td>
+    <td><a href="https://www.youtube.com/channel/UCUSNjqIqB1WDyISapkzfYzQ">Dreezy</a></td>
+  </tr>
+
+  <tr>
+    <td><a href="https://www.youtube.com/user/youngmamusic">Young M.A</a></td>
+    <td><a href="https://www.youtube.com/channel/UCzpl23pGTHVYqvKsgY0A-_w">Doja Cat</a></td>
+    <td><a href="https://www.youtube.com/channel/UCSRKoF1g9riiOj4B1f26nTg">Tink</a></td>
+    <td><a href="https://www.youtube.com/user/YesIamQuESt">Sylvan LaCue</a></td>
+    <td><a href="https://www.youtube.com/user/TheMarvelinc">KR</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://www.youtube.com/user/SIYATHEDREAMER">SIYA</a></td>
+  </tr>
+</table>
+
+
+
+
+<!-- Header -->
+<div class="header">
+  <h1><u><center><h1 id="Gallery">Gallery</h1></center></u></h1>
+  <button class="btn" onclick="one()">1</button>
+  <button class="btn" onclick="two()">2</button>
+  <button class="btn" onclick="three()">3</button>
+</div>
+
+<!-- Photo Grid -->
+<div class="row">
+  <div class="column">
+    <div class="container">
+    <img src="wale.jpg" style="width:100%">
+    <div class="bottom-right">Wale</div></div>
+    <div class="container">
+    <img src="jayrock.jpg" style="width:100%">
+    <div class="bottom-right">Jay Rock</div></div>
+    <div class="container">
+    <img src="buddy.jpg" style="width:100%">
+    <div class="bottom-right">Buddy</div></div>
+    <div class="container">
+    <img src="jack.jpg" style="width:100%">
+    <div class="bottom-right">Jack Harlow</div></div>
+    <div class="container">
+    <img src="kaytra.jpg" style="width:100%">
+    <div class="bottom-right">Kaytranada</div></div>
+    <div class="container">
+    <img src="basjcole.jpg" style="width:100%">
+    <div class="bottom-right">Bas & J Cole</div></div>
+    <div class="container">
+    <img src="boogie.jpg" style="width:100%">
+    <div class="bottom-right">Boogie</div></div>
+
+
+    <div class="container">
+    <img src="youngma.jpg" style="width:100%">
+    <div class="bottom-right">Young M.A</div></div>
+
+
+    <div class="container">
+    <img src="link.jpg" style="width:100%">
+    <div class="bottom-right">Gold Link</div></div>
+    <div class="container">
+    <img src="doja.jpg" style="width:100%">
+    <div class="bottom-right">Doja Cat</div></div>
+  </div>
+
+
+
+
+<div class="column">
+  <div class="container">
+    <img src="kota.jpg" style="width:100%">
+    <div class="bottom-right">KOTA the Friend</div></div>
+    <div class="container">
+    <img src="tdeville.jpg" style="width:100%">
+    <div class="bottom-right">J.I.D & Reason</div></div>
+    <div class="container">
+    <img src="kw.jpg" style="width:100%">
+    <div class="bottom-right">Kator Walker</div></div>
+    <div class="container">
+    <img src="earthgang.jpg" style="width:100%">
+    <div class="bottom-right">EarthGang</div></div>
+    <div class="container">
+    <img src="paak.jpg" style="width:100%">
+    <div class="bottom-right">Anderson Paak</div></div>
+    <div class="container">
+    <img src="deetranada.jpg" style="width:100%">
+    <div class="bottom-right">Deetranada</div></div>
+    <div class="container">
+    <img src="bangas.jpg" style="width:100%">
+    <div class="bottom-right">Tank & the Bangas</div></div>
+    <div class="container">
+    <img src="iamddb.jpg" style="width:100%">
+    <div class="bottom-right">IAMDDB</div></div>
+    <div class="container">
+    <img src="kk.jpg" style="width:100%">
+    <div class="bottom-right">Kamaiyah</div></div>
+    <div class="container">
+    <img src="47.jpg" style="width:100%">
+    <div class="bottom-right">LeiKeli47</div></div>
+    <div class="container">
+    <img src="kodie.jpg" style="width:100%">
+    <div class="bottom-right">Kodie Shane</div></div>
+  </div>
+
+  <div class="column">
+    <div class="container">
+      <img src="coi.jpg" style="width:100%">
+      <div class="bottom-right">Coi Leray</div></div>
+      <div class="container">
+      <img src="haze.jpg" style="width:100%">
+      <div class="bottom-right">Angel Haze</div></div>
+      <div class="container">
+      <img src="RAY.jpg" style="width:100%">
+      <div class="bottom-right">Ray BLK</div></div>
+      <div class="container">
+      <img src="dreezy.jpg" style="width:100%">
+      <div class="bottom-right">Dreezy</div></div>
+      <div class="container">
+      <img src="jean.jpg" style="width:100%">
+      <div class="bottom-right">Jean Deaux</div></div>
+      <div class="container">
+      <img src="rogers.jpg" style="width:100%">
+      <div class="bottom-right">Chynna Rogers</div></div>
+      <div class="container">
+      <img src="simz.jpg" style="width:100%">
+      <div class="bottom-right">Little Simz</div></div>
+      <div class="container">
+      <img src="iggy.jpg" style="width:100%">
+      <div class="bottom-right">Iggy Azalea</div></div>
+      <div class="container">
+      <img src="JI.jpg" style="width:100%">
+      <div class="bottom-right">J.I</div></div>
+      <div class="container">
+      <img src="phora.jpg" style="width:100%">
+      <div class="bottom-right">Phora</div></div>
+      <div class="container">
+      <img src="SIYA.jpg" style="width:100%">
+      <div class="bottom-right">SIYA</div></div>
+
+
+
+    </div>
+
+    <div class="column">
+      <div class="container">
+    <img src="jadens.jpg" style="width:100%">
+    <div class="bottom-right">Jaden</div></div>
+    <div class="container">
+    <img src="token.jpg" style="width:100%">
+    <div class="bottom-right">Token</div></div>
+    <div class="container">
+    <img src="daveb.jpg" style="width:100%">
+    <div class="bottom-right">Dave B</div></div>
+    <div class="container">
+    <img src="lute.jpg" style="width:100%">
+    <div class="bottom-right">Lute</div></div>
+    <div class="container">
+    <img src="whack.jpg" style="width:100%">
+    <div class="bottom-right">Tierra Whack</div></div>
+    <div class="container">
+    <img src="noname.jpg" style="width:100%">
+    <div class="bottom-right">NoName</div></div>
+    <div class="container">
+    <img src="saba.jpg" style="width:100%">
+    <div class="bottom-right">Saba</div></div>
+    <div class="container">
+    <img src="amine.jpg" style="width:100%">
+    <div class="bottom-right">Amine</div></div>
+    <div class="container">
+    <img src="mack.jpg" style="width:100%">
+    <div class="bottom-right">Macklemore</div></div>
+    <div class="container">
+    <img src="MAC.jpg" style="width:100%">
+    <div class="bottom-right">Mac Miller</div></div>
+    <div class="container">
+    <img src="geazy2.jpg" style="width:100%">
+    <div class="bottom-right">G Eazy</div></div>
+
+  </div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+
+
+
 
 </html>
